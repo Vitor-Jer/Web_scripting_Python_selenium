@@ -1,3 +1,5 @@
+#Automação Baseada no site KAGLLE para baixar as bases, mas a estrutura do Selenium não irá mudar, basta fazer as alterações de ID e classes para cada site.
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -147,7 +149,7 @@ def automate_download(url, email, senha):
 
 if __name__ == "__main__":
     # URL do site para baixar o arquivo
-    site_url = 'https://www.kaggle.com/datasets/thomassimeo/contas-senior-neobpo?select=DESPESAS.xlsx'
+    site_url = '' #Defina o link da base aqui
 
     # Credenciais de login (e-mail e senha)
     user_email = input('E-mail: ')  # Substitua pelo seu e-mail
